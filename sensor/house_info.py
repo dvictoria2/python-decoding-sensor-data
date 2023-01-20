@@ -1,7 +1,6 @@
-#from load_info import load_sensor_data
+from load_info import load_sensor_data
 #from house_info import HouseInfo
 #from datetime import datetime, date
-from load_info import load_sensor_data
 
 # Module 3: Create an instance of sensor data
 
