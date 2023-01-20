@@ -1,6 +1,6 @@
 # Runner script for all modules
 
-
+from load_data import load_sensor_data
 ##############################
 # Do not remove these two lines
 # They are needed to validate your unittest
@@ -9,6 +9,9 @@ print("Sensor Data App")
 ##############################
 
 # Module 1 code here:
+data = load_sensor_data()
+print('loaded records: {}'.format(len(data)))
+
 
 # Module 2 code here:
 
