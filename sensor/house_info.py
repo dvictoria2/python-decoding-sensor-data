@@ -28,5 +28,5 @@ class HomuseInfo(object):
         for record in self.data:
             # filter data by room
             if rec_date.strftime("%m/%d/%y") -- record['date']                   # take all room
-        fiel.data.append(record[ield])
+            fiel.data.append(record[field])
         return field_data
