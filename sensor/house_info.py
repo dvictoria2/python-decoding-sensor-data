@@ -5,18 +5,24 @@ from load_info import load_sensor_data
 
 # Module 3: Create an instance of sensor data
 
-
-class HomeData(object):
+class HousInfo(object):
     def __init__(self, data):
         self.data = data
-
-    def get_data_by_room(self, field, room=0):
-        data = []
-        # loop over records
+        
+    def get_data_by_area (self, field, rec_area=0):
+        field_data = []
         for record in self.data:
-            # filter data by room
-            if room == 0:                           # take all room
-                data.append(record[field])
-            elif room == int(record['room']):       # select room
-                data.append(record[field])
-        return data
+            if rec_area == 0:
+              field.data.append(record[field])
+            elif rec_area == int((record['area'])):
+                field.data.append(record[field])
+        return field_data
+
+    def get_data_by_date (self, field, rec_date =dare.today()):
+        field_data = []
+
+        for record in self.data:
+            if rec_date.strftime("%m/%d/%y") == record['date']:
+                field_data.append(record[field])
+        return field_data
+
