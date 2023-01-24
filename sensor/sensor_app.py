@@ -43,8 +43,6 @@ print("\nHouse Temperature sensor records for date: {} = {}".format(
 print("\tMaximum: {0}, Minimum: {1} temperatures".format(max(recs), min(recs)))
 
 
-
-
 particle_data = ParticleData(data)
 recs = particle_data.get_data_by_area(rec_area=test_area)
 print("\nHouse Particle sensor records for area {} = {}".format(test_area, len(recs)))
